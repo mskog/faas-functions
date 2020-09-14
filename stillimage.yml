@@ -1,0 +1,9 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: https://faas.mskog.com
+functions:
+  stillimage:
+    lang: python3-http-debian
+    handler: ./stillimage
+    image: docker-registry.mskog.com/stillimage:latest

@@ -1,0 +1,11 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: https://faas.mskog.com
+functions:
+  readability:
+    lang: python3-http-debian
+    handler: ./readability
+    image: docker-registry.mskog.com/readability:latest
+    environment:
+      HOSTNAME: localhost

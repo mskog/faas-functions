@@ -1,0 +1,3 @@
+[submodule "template/puppeteer"]
+	path = template/puppeteer
+	url = https://github.com/mskog/openfaas_puppeteer

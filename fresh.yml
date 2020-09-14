@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: https://faas.mskog.com
+functions:
+  fresh:
+    lang: puppeteer
+    handler: ./fresh
+    image: docker-registry.mskog.com/fresh:latest
+

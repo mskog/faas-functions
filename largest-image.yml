@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: https://faas.mskog.com
+functions:
+  largest-image:
+    lang: puppeteer
+    handler: ./largest-image
+    image: docker-registry.mskog.com/largest-image:latest
+

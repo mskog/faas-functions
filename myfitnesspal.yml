@@ -1,0 +1,15 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: https://faas.mskog.com
+functions:
+  myfitnesspal:
+    lang: puppeteer
+    handler: ./myfitnesspal
+    image: docker-registry.mskog.com/myfitnesspal:latest
+    environment:
+      read_timeout: "300s"  # default is 5s, Maximum time to read HTTP request
+      write_timeout: "300s"  # default is 5s, Maximum time to write HTTP response
+      upstream_timeout: "300s" # Maximum duration of upstream function call
+      exec_timeout: "300s"
+

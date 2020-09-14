@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: https://faas.mskog.com
+functions:
+  cloudflare-analytics:
+    lang: node12
+    handler: ./cloudflare-analytics
+    image: docker-registry.mskog.com/cloudflare-analytics:latest
+

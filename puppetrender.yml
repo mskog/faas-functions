@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: https://faas.mskog.com
+functions:
+  puppetrender:
+    lang: puppeteer
+    handler: ./puppetrender
+    image: docker-registry.mskog.com/puppetrender:latest
+

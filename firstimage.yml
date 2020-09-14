@@ -1,0 +1,10 @@
+version: 1.0
+provider:
+  name: openfaas
+  gateway: https://faas.mskog.com
+functions:
+  firstimage:
+    lang: node12
+    handler: ./firstimage
+    image: docker-registry.mskog.com/firstimage:latest
+
