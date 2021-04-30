@@ -9,8 +9,5 @@ module.exports = async (event, context) => {
   const response = await axios.get(input);
   const { url, title } = response.data.results[0];
   const result = { url, title };
-  return context
-    .status(200)
-    .headers({ "Content-Type": "application/json" })
-    .succeed(JSON.stringify(result));
+  return context.status(200).headers({ "Content-Type": "application/json" }).succeed(JSON.stringify(result));
 };
