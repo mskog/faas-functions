@@ -22,7 +22,7 @@ module.exports = async (event, context) => {
     .replace(/[\t\r\n]/g, "");
 
   const hoursText = $(
-    "#global_site > div:nth-child(2) > div > div.content_75_static > div.game_times > ul > li:nth-child(1) > div"
+    "#global_site > div:nth-child(3) > div > div.content_75_static > div.game_times > ul > li:nth-child(1) > div"
   )
     .first()
     .text();
